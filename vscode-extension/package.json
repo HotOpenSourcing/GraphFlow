@@ -105,7 +105,7 @@
       "graphflow": [
         {
           "id": "graphflow.workbench",
-          "name": "工作台脉络",
+          "name": "\u5de5\u4f5c\u53f0\u8109\u7edc",
           "visibility": "collapsed"
         }
       ]
@@ -113,7 +113,7 @@
     "viewsWelcome": [
       {
         "view": "graphflow.workbench",
-        "contents": "日常 Chat 保持静默。复杂任务先 graphflow_plan，主线功能节点会出现在这里；点击节点复制 topicId 即可回到该功能继续。\n[打开工作台脉络](command:graphflow.showWorkbench)"
+        "contents": "\u65e5\u5e38 Chat \u4fdd\u6301\u9759\u9ed8\u3002\u590d\u6742\u4efb\u52a1\u5148 graphflow_plan\uff0c\u4e3b\u7ebf\u529f\u80fd\u8282\u70b9\u4f1a\u51fa\u73b0\u5728\u8fd9\u91cc\uff1b\u70b9\u51fb\u8282\u70b9\u590d\u5236 topicId \u5373\u53ef\u56de\u5230\u8be5\u529f\u80fd\u7ee7\u7eed\u3002\n[\u6253\u5f00\u5de5\u4f5c\u53f0\u8109\u7edc](command:graphflow.showWorkbench)"
       }
     ],
     "chatParticipants": [
@@ -162,7 +162,7 @@
           },
           {
             "name": "workbench",
-            "description": "Alias of /tree — wake the collapsed workbench outline"
+            "description": "Alias of /tree \u2014 wake the collapsed workbench outline"
           },
           {
             "name": "skills",
@@ -183,7 +183,7 @@
     "test:mcp": "node ./scripts/test-mcp-vendor.mjs",
     "bundle": "node ./scripts/bundle-extension.mjs",
     "typecheck": "tsc --noEmit -p ./tsconfig.json",
-    "build": "npm run sync-runtime && npm run bundle",
+    "build": "node init && npm run sync-runtime && npm run bundle",
     "package": "npm run build && npm run test:runtime && npm run test:mcp && node ./scripts/package-vsix.mjs"
   },
   "devDependencies": {
