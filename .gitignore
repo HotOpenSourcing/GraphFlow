@@ -1,6 +1,5 @@
 node_modules/
 dist/
-.env
 .DS_Store
 *.log
 coverage/
@@ -24,7 +23,6 @@ stderr.txt
 runs.json
 .graphflow/
 .cursor/mcp.json
-.vscode/mcp.json
 vscode-extension/vendor/
 .joycode/
 # Local agent/harness scratch (not project content)
@@ -37,3 +35,4 @@ Cursor/
 .mcp.json
 benchmarks/.cache/
 graphify-out/
+config.bat
